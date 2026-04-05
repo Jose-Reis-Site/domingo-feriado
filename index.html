@@ -350,7 +350,7 @@
                 let tituloAtividade = codLinha ? traduzirLinha(codLinha) : nomeEvento;
                 if(tituloAtividade.includes("Intra-jornada")) tituloAtividade = "INTRA-JORNADA";
 
-                return gerarCard(`TRIPULANTE: ${t}`, tituloAtividade, g, false);
+                return gerarCard(`TRIPULANTE: ${t} | DOM/FER`, tituloAtividade, g, false);
             }).join('');
         });
         grid.innerHTML = htmlFinal;
